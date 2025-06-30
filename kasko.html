@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КАСКО - ФинансЦентр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <a href="index.html">ФинансЦентр</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">КАСКО</h1>
+                <p class="text-xl mb-8">
+                    Комплексное автострахование для полной защиты вашего автомобиля от всех рисков
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Рассчитать КАСКО
+                    </button>
+                    <button class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-700 transition">
+                        Получить консультацию
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Виды КАСКО</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Полное КАСКО</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Ущерб от ДТП
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Угон и хищение
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Стихийные бедствия
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Вандализм
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Падение предметов
+                        </li>
+                    </ul>
+                    <div class="text-2xl font-bold text-green-600 mb-4">от 25 000 ₽</div>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Выбрать полное КАСКО
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Частичное КАСКО</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Только ущерб от ДТП
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Или только угон
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Экономия до 50%
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Гибкие условия
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Быстрое оформление
+                        </li>
+                    </ul>
+                    <div class="text-2xl font-bold text-blue-600 mb-4">от 12 000 ₽</div>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Выбрать частичное КАСКО
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Калькулятор КАСКО</h2>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Марка автомобиля</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Выберите марку</option>
+                                    <option>Toyota</option>
+                                    <option>Volkswagen</option>
+                                    <option>BMW</option>
+                                    <option>Mercedes-Benz</option>
+                                    <option>Audi</option>
+                                    <option>Hyundai</option>
+                                    <option>Kia</option>
+                                    <option>Lada</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Модель</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Выберите модель</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Год выпуска</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>Старше 2020</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Стоимость автомобиля (₽)</label>
+                                <input type="number" placeholder="1500000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Возраст водителя</label>
+                                <input type="number" placeholder="30" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Стаж вождения</label>
+                                <input type="number" placeholder="10" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Франшиза</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Без франшизы</option>
+                                    <option>15 000 ₽</option>
+                                    <option>30 000 ₽</option>
+                                    <option>50 000 ₽</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Место стоянки</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Охраняемая стоянка</option>
+                                    <option>Гараж</option>
+                                    <option>Двор</option>
+                                    <option>Улица</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-red-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition mt-8">
+                                Рассчитать КАСКО
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Дополнительные услуги</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Эвакуатор 24/7</h3>
+                    <p class="text-gray-600 mb-4">Круглосуточная служба эвакуации по всей России</p>
+                    <p class="text-lg font-semibold text-orange-600">Бесплатно</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Аварийный комиссар</h3>
+                    <p class="text-gray-600 mb-4">Выезд специалиста на место ДТП</p>
+                    <p class="text-lg font-semibold text-purple-600">Включено</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Рассрочка 0%</h3>
+                    <p class="text-gray-600 mb-4">Оплата полиса в рассрочку без переплат</p>
+                    <p class="text-lg font-semibold text-teal-600">До 12 месяцев</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Защитите свой автомобиль</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                КАСКО - это спокойствие за рулем и уверенность в завтрашнем дне
+            </p>
+            <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                Получить предложение
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Ваш надежный партнер в автостраховании
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="osago.html" class="hover:text-white transition">ОСАГО</a></li>
+                        <li><a href="kasko.html" class="hover:text-white transition">КАСКО</a></li>
+                        <li><a href="mortgage.html" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="cards.html" class="hover:text-white transition">Карты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая важная, 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

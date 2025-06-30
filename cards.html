@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банковские карты - ФинансЦентр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+        .bank-card { 
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            border-radius: 16px;
+            aspect-ratio: 1.586;
+            position: relative;
+            overflow: hidden;
+        }
+        .bank-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            border-radius: 16px;
+        }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <a href="index.html">ФинансЦентр</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">Банковские карты</h1>
+                <p class="text-xl mb-8">
+                    Дебетовые и кредитные карты с выгодными условиями, кэшбэком и без комиссий
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Выбрать карту
+                    </button>
+                    <button class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-700 transition">
+                        Сравнить условия
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Types Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Дебетовые карты</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="bank-card mb-6 text-white relative">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="w-12 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-md"></div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs opacity-70">Cashback</div>
+                                    <div class="text-lg font-bold">до 5%</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm opacity-70 mb-1">•••• •••• •••• 1234</div>
+                                <div class="text-xs opacity-70">IVAN PETROV</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Cashback карта</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Кэшбэк до 5% в категориях
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            1% кэшбэк на все покупки
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Бесплатное обслуживание
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Снятие без комиссий
+                        </li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Оформить карту
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="bank-card mb-6 text-white relative" style="background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="w-12 h-8 bg-white bg-opacity-20 rounded-md"></div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs opacity-70">Premium</div>
+                                    <div class="text-lg font-bold">VIP</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm opacity-70 mb-1">•••• •••• •••• 5678</div>
+                                <div class="text-xs opacity-70">ANNA SMIRNOVA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Premium карта</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Доступ к VIP-залам
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Консьерж-сервис
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Страхование путешествий
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Повышенные лимиты
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Оформить карту
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="bank-card mb-6 text-white relative" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="w-12 h-8 bg-white bg-opacity-20 rounded-md"></div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs opacity-70">Salary</div>
+                                    <div class="text-lg font-bold">0₽</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm opacity-70 mb-1">•••• •••• •••• 9012</div>
+                                <div class="text-xs opacity-70">PETR IVANOV</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Зарплатная карта</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Бесплатное обслуживание
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Льготное кредитование
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Накопительный счет
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Мобильный банк
+                        </li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Оформить карту
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Cards Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Кредитные карты</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="bank-card mb-6 text-white relative" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="w-12 h-8 bg-white bg-opacity-20 rounded-md"></div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs opacity-70">Credit</div>
+                                    <div class="text-lg font-bold">до 1M</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm opacity-70 mb-1">•••• •••• •••• 3456</div>
+                                <div class="text-xs opacity-70">CREDIT HOLDER</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Кредитка с грейс-периодом</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                            Лимит до 1 000 000 ₽
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                            Грейс-период 100 дней
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                            Кэшбэк до 3%
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
+                            Без комиссий за снятие
+                        </li>
+                    </ul>
+                    <div class="text-2xl font-bold text-red-600 mb-4">от 15,9% годовых</div>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                        Оформить кредитку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="bank-card mb-6 text-white relative" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                        <div class="absolute inset-0 p-6 flex flex-col justify-between">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <div class="w-12 h-8 bg-white bg-opacity-20 rounded-md"></div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-xs opacity-70">Platinum</div>
+                                    <div class="text-lg font-bold">Elite</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-sm opacity-70 mb-1">•••• •••• •••• 7890</div>
+                                <div class="text-xs opacity-70">PLATINUM HOLDER</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Platinum кредитная</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Лимит до 3 000 000 ₽
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Персональный менеджер
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Приоритетное обслуживание
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Страхование по всему миру
+                        </li>
+                    </ul>
+                    <div class="text-2xl font-bold text-purple-600 mb-4">от 12,9% годовых</div>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                        Оформить кредитку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Сравнение карт</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-sm font-semibold text-gray-600">Параметр</th>
+                            <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">Cashback</th>
+                            <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">Premium</th>
+                            <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">Зарплатная</th>
+                            <th class="px-6 py-4 text-center text-sm font-semibold text-gray-600">Кредитная</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-800 font-medium">Годовое обслуживание</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">Бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">3 000 ₽</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">Бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">Бесплатно</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-800 font-medium">Кэшбэк</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600 font-semibold">до 5%</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">до 2%</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">до 1%</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">до 3%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-800 font-medium">Снятие наличных</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">5 раз бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600 font-semibold">Без ограничений</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">3 раза бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">Без комиссий</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-800 font-medium">Переводы</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">20 бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600 font-semibold">Без ограничений</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">10 бесплатно</td>
+                            <td class="px-6 py-4 text-center text-sm text-gray-600">15 бесплатно</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 text-sm text-gray-800 font-medium">Мобильный банк</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600">✓</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600">✓</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600">✓</td>
+                            <td class="px-6 py-4 text-center text-sm text-green-600">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Выберите идеальную карту</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Дебетовые и кредитные карты с лучшими условиями на рынке
+            </p>
+            <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                Подать заявку на карту
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Лучшие банковские карты для ваших потребностей
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="osago.html" class="hover:text-white transition">ОСАГО</a></li>
+                        <li><a href="kasko.html" class="hover:text-white transition">КАСКО</a></li>
+                        <li><a href="mortgage.html" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="cards.html" class="hover:text-white transition">Карты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая важная, 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

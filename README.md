@@ -1,2 +1,0 @@
-# finanscenter-site
-finanscenter-site

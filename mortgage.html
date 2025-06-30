@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ипотека - ФинансЦентр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <a href="index.html">ФинансЦентр</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">Ипотека</h1>
+                <p class="text-xl mb-8">
+                    Выгодные ипотечные кредиты для покупки жилья с минимальными ставками и быстрым одобрением
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Рассчитать ипотеку
+                    </button>
+                    <button class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Ипотечные программы</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Семейная ипотека</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Ставка от 5,5% годовых
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Первоначальный взнос от 15%
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Срок до 30 лет
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Для семей с детьми
+                        </li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Подробнее
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                            <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15a24.98 24.98 0 01-8-1.308z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Ипотека для ИП</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Ставка от 7,5% годовых
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Первоначальный взнос от 20%
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Упрощенная отчетность
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Быстрое рассмотрение
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Подробнее
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Рефинансирование</h3>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Ставка от 6,5% годовых
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Без первоначального взноса
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Снижение платежа
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+                            Объединение кредитов
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Ипотечный калькулятор</h2>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Стоимость недвижимости (₽)</label>
+                                <input type="number" placeholder="5000000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Первоначальный взнос (₽)</label>
+                                <input type="number" placeholder="1000000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Процентная ставка (%)</label>
+                                <input type="number" step="0.1" placeholder="7.5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Срок кредита (лет)</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                    <option>25</option>
+                                    <option>30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Результат расчета</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Сумма кредита:</span>
+                                        <span class="font-semibold" id="loanAmount">4 000 000 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Ежемесячный платеж:</span>
+                                        <span class="font-semibold text-red-600" id="monthlyPayment">32 500 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Переплата:</span>
+                                        <span class="font-semibold" id="overpayment">1 800 000 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Общая сумма:</span>
+                                        <span class="font-semibold" id="totalAmount">5 800 000 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-red-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition">
+                                Подать заявку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Почему выбирают нас</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Быстрое одобрение</h3>
+                    <p class="text-gray-600">Решение по заявке в течение 1 дня</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Низкие ставки</h3>
+                    <p class="text-gray-600">Конкурентные процентные ставки</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Консультации</h3>
+                    <p class="text-gray-600">Бесплатные консультации экспертов</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 011.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 011.414-1.414L15 13.586V12a1 1 0 011-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Без скрытых комиссий</h3>
+                    <p class="text-gray-600">Прозрачные условия кредитования</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Получите ипотеку мечты</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Одобряем ипотеку в течение 1 дня. Выгодные условия и индивидуальный подход
+            </p>
+            <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                Подать заявку сейчас
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Ваш надежный партнер в получении ипотеки
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="osago.html" class="hover:text-white transition">ОСАГО</a></li>
+                        <li><a href="kasko.html" class="hover:text-white transition">КАСКО</a></li>
+                        <li><a href="mortgage.html" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="cards.html" class="hover:text-white transition">Карты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая важная, 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Calculator functionality
+        function calculateMortgage() {
+            const propertyPrice = document.querySelector('input[placeholder="5000000"]').value || 5000000;
+            const downPayment = document.querySelector('input[placeholder="1000000"]').value || 1000000;
+            const interestRate = document.querySelector('input[placeholder="7.5"]').value || 7.5;
+            const loanTerm = document.querySelector('select').value || 20;
+            
+            const loanAmount = propertyPrice - downPayment;
+            const monthlyRate = (interestRate / 100) / 12;
+            const numberOfPayments = loanTerm * 12;
+            
+            const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+            const totalAmount = monthlyPayment * numberOfPayments;
+            const overpayment = totalAmount - loanAmount;
+            
+            document.getElementById('loanAmount').textContent = loanAmount.toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('monthlyPayment').textContent = Math.round(monthlyPayment).toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('overpayment').textContent = Math.round(overpayment).toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('totalAmount').textContent = Math.round(totalAmount).toLocaleString('ru-RU') + ' ₽';
+        }
+
+        // Auto-calculate on input change
+        document.querySelectorAll('input, select').forEach(input => {
+            input.addEventListener('input', calculateMortgage);
+        });
+
+        // Initialize calculation
+        calculateMortgage();
+    </script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

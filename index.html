@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФинансЦентр - Все финансовые услуги в одном месте</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">ФинансЦентр</div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-6">Все финансовые услуги в одном месте</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                ОСАГО, КАСКО, ипотека, кредиты, карты, страхование и зарубежные счета. 
+                Выгодные условия и быстрое оформление от ведущих банков и страховых компаний России.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                    Получить консультацию
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Наши услуги</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ОСАГО -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">ОСАГО</h3>
+                    <p class="text-gray-600 mb-4">Обязательное страхование автогражданской ответственности. Лучшие тарифы от ведущих страховых компаний.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Оформление за 15 минут</li>
+                        <li>• Скидки до 50%</li>
+                        <li>• Онлайн полис</li>
+                    </ul>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                        Оформить ОСАГО
+                    </button>
+                </div>
+
+                <!-- КАСКО -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">КАСКО</h3>
+                    <p class="text-gray-600 mb-4">Добровольное комплексное автострахование. Защита от угона, ущерба, стихийных бедствий.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Полное и частичное КАСКО</li>
+                        <li>• Рассрочка платежа</li>
+                        <li>• Эвакуатор 24/7</li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Рассчитать КАСКО
+                    </button>
+                </div>
+
+                <!-- Ипотека -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Ипотека</h3>
+                    <p class="text-gray-600 mb-4">Выгодные ипотечные кредиты на покупку жилья. Ставки от 6,5% годовых.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Первоначальный взнос от 10%</li>
+                        <li>• Срок до 30 лет</li>
+                        <li>• Господдержка</li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <!-- Кредитные карты -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Кредитные карты</h3>
+                    <p class="text-gray-600 mb-4">Кредитные карты с льготным периодом до 365 дней и кэшбэком до 30%.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Беспроцентный период</li>
+                        <li>• Высокий кэшбэк</li>
+                        <li>• Без годового обслуживания</li>
+                    </ul>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                        Выбрать карту
+                    </button>
+                </div>
+
+                <!-- Дебетовые карты -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Дебетовые карты</h3>
+                    <p class="text-gray-600 mb-4">Дебетовые карты с высоким процентом на остаток и выгодным кэшбэком.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• До 10% на остаток</li>
+                        <li>• Кэшбэк до 10%</li>
+                        <li>• Бесплатное обслуживание</li>
+                    </ul>
+                    <button class="w-full bg-yellow-600 text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition">
+                        Оформить карту
+                    </button>
+                </div>
+
+                <!-- Кредиты и займы -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zM14 6a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h6zM4 14a2 2 0 002 2h8a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Кредиты и займы</h3>
+                    <p class="text-gray-600 mb-4">Потребительские кредиты и займы на любые цели. Быстрое рассмотрение заявки.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Ставки от 7,9%</li>
+                        <li>• Решение за 15 минут</li>
+                        <li>• Без справок о доходах</li>
+                    </ul>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                        Получить кредит
+                    </button>
+                </div>
+
+                <!-- Страхование -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Страхование</h3>
+                    <p class="text-gray-600 mb-4">Все виды страхования: жизни, здоровья, имущества, путешествий.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• ДМС и ОМС</li>
+                        <li>• Страхование жизни</li>
+                        <li>• Страхование имущества</li>
+                    </ul>
+                    <button class="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition">
+                        Выбрать страховку
+                    </button>
+                </div>
+
+                <!-- Зарубежные счета -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Зарубежные счета</h3>
+                    <p class="text-gray-600 mb-4">Открытие банковских счетов в зарубежных банках. Консультации по валютному законодательству.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• Счета в ЕС и Азии</li>
+                        <li>• Мультивалютные счета</li>
+                        <li>• Сопровождение процедуры</li>
+                    </ul>
+                    <button class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+                        Консультация
+                    </button>
+                </div>
+
+                <!-- Инвестиции -->
+                <div class="service-card rounded-xl p-6 shadow-lg card-hover border border-gray-100">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Инвестиции</h3>
+                    <p class="text-gray-600 mb-4">Брокерские услуги, ИИС, управление активами. Инвестиции в акции, облигации, фонды.</p>
+                    <ul class="text-sm text-gray-600 mb-4">
+                        <li>• ИИС с льготами</li>
+                        <li>• Российские и зарубежные активы</li>
+                        <li>• Консультации аналитиков</li>
+                    </ul>
+                    <button class="w-full bg-pink-600 text-white py-3 rounded-lg font-semibold hover:bg-pink-700 transition">
+                        Начать инвестировать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Почему выбирают нас</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Лучшие условия</h3>
+                    <p class="text-gray-600">Работаем с ведущими банками и страховыми компаниями, предлагаем самые выгодные условия на рынке.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Быстрое оформление</h3>
+                    <p class="text-gray-600">Большинство услуг оформляются онлайн за 15-30 минут. Минимум документов и максимум удобства.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Поддержка 24/7</h3>
+                    <p class="text-gray-600">Наши специалисты готовы помочь в любое время. Консультации, сопровождение сделок, решение вопросов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">Готовы начать?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Оставьте заявку, и наш специалист свяжется с вами в течение 15 минут для бесплатной консультации.
+            </p>
+            <form class="max-w-md mx-auto bg-white rounded-lg p-6 text-gray-800">
+                <div class="mb-4">
+                    <input type="text" placeholder="Ваше имя" class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div class="mb-4">
+                    <input type="tel" placeholder="Телефон" class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div class="mb-4">
+                    <select class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-red-500">
+                        <option>Выберите услугу</option>
+                        <option>ОСАГО</option>
+                        <option>КАСКО</option>
+                        <option>Ипотека</option>
+                        <option>Кредитная карта</option>
+                        <option>Дебетовая карта</option>
+                        <option>Кредит</option>
+                        <option>Страхование</option>
+                        <option>Зарубежный счет</option>
+                        <option>Инвестиции</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                    Получить консультацию
+                </button>
+                <p class="text-xs text-gray-500 mt-3">
+                    Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Ваш надежный партнер в мире финансов. Все услуги в одном месте с лучшими условиями на рынке.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">ОСАГО и КАСКО</a></li>
+                        <li><a href="#" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="#" class="hover:text-white transition">Кредиты и карты</a></li>
+                        <li><a href="#" class="hover:text-white transition">Страхование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="licenses.html" class="hover:text-white transition">Лицензии</a></li>
+                        <li><a href="reviews.html" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="contacts.html" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая лучшая, 1</p>
+                        <p>🕒 Пн-Пт: 10:00-16:00, Сб-Вс: Выходные</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+        });
+
+        // Add loading animation to buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const originalText = this.textContent;
+                this.textContent = 'Загрузка...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.disabled = false;
+                }, 2000);
+            });
+        });
+    </script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кредиты и займы - ФинансЦентр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <a href="index.html">ФинансЦентр</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">Кредиты и займы</h1>
+                <p class="text-xl mb-8">
+                    Выгодные условия кредитования для любых целей с низкими процентными ставками
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Рассчитать кредит
+                    </button>
+                    <button class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Types Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Виды кредитов</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Потребительский кредит</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 3 000 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 8,5% годовых</li>
+                        <li class="text-gray-600">• Срок до 7 лет</li>
+                        <li class="text-gray-600">• Без справок о доходах</li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Кредит для ИП</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 5 000 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 12% годовых</li>
+                        <li class="text-gray-600">• Срок до 5 лет</li>
+                        <li class="text-gray-600">• Развитие бизнеса</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Рефинансирование</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 5 000 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 7% годовых</li>
+                        <li class="text-gray-600">• Срок до 7 лет</li>
+                        <li class="text-gray-600">• Снижение платежа</li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Автокредит</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 7 000 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 6,5% годовых</li>
+                        <li class="text-gray-600">• Срок до 7 лет</li>
+                        <li class="text-gray-600">• Новые и б/у авто</li>
+                    </ul>
+                    <button class="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zM8 6a2 2 0 114 0v1H8V6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Займы до зарплаты</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 100 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 0,5% в день</li>
+                        <li class="text-gray-600">• Срок до 30 дней</li>
+                        <li class="text-gray-600">• Быстрое получение</li>
+                    </ul>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 card-hover">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-teal-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Экспресс-кредит</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="text-gray-600">• Сумма до 1 000 000 ₽</li>
+                        <li class="text-gray-600">• Ставка от 15% годовых</li>
+                        <li class="text-gray-600">• Срок до 3 лет</li>
+                        <li class="text-gray-600">• Решение за 15 минут</li>
+                    </ul>
+                    <button class="w-full bg-teal-600 text-white py-3 rounded-lg font-semibold hover:bg-teal-700 transition">
+                        Подать заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Кредитный калькулятор</h2>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Сумма кредита (₽)</label>
+                                <input type="number" id="loanSum" placeholder="500000" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Процентная ставка (% годовых)</label>
+                                <input type="number" id="interestRate" step="0.1" placeholder="12.5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Срок кредита (месяцев)</label>
+                                <select id="loanTerm" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option value="12">12 месяцев</option>
+                                    <option value="24">24 месяца</option>
+                                    <option value="36">36 месяцев</option>
+                                    <option value="48">48 месяцев</option>
+                                    <option value="60">60 месяцев</option>
+                                    <option value="84">84 месяца</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Тип платежа</label>
+                                <select id="paymentType" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option value="annuity">Аннуитетный</option>
+                                    <option value="differentiated">Дифференцированный</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 rounded-lg p-6">
+                                <h3 class="text-lg font-semibold mb-4 text-gray-800">Результат расчета</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Ежемесячный платеж:</span>
+                                        <span class="font-semibold text-red-600" id="monthlyPaymentResult">13 500 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Переплата:</span>
+                                        <span class="font-semibold" id="overPaymentResult">162 000 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Общая сумма:</span>
+                                        <span class="font-semibold" id="totalAmountResult">662 000 ₽</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Эффективная ставка:</span>
+                                        <span class="font-semibold" id="effectiveRate">12.5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-full bg-red-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition">
+                                Подать заявку на кредит
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Требования к заемщику</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Основные требования</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Возраст от 18 до 70 лет
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Гражданство РФ
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Постоянная регистрация
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Стаж работы от 3 месяцев
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                            Стабильный доход
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Необходимые документы</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Паспорт РФ
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Справка о доходах
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            Трудовая книжка
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            СНИЛС
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                            ИНН (при наличии)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Получите кредит уже сегодня</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Быстрое рассмотрение заявки, выгодные условия и индивидуальный подход к каждому клиенту
+            </p>
+            <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                Подать заявку сейчас
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Ваш надежный партнер в получении кредитов
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="osago.html" class="hover:text-white transition">ОСАГО</a></li>
+                        <li><a href="kasko.html" class="hover:text-white transition">КАСКО</a></li>
+                        <li><a href="mortgage.html" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="cards.html" class="hover:text-white transition">Карты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая важная, 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Credit calculator functionality
+        function calculateCredit() {
+            const loanSum = parseFloat(document.getElementById('loanSum').value) || 500000;
+            const interestRate = parseFloat(document.getElementById('interestRate').value) || 12.5;
+            const loanTerm = parseInt(document.getElementById('loanTerm').value) || 36;
+            const paymentType = document.getElementById('paymentType').value;
+            
+            const monthlyRate = (interestRate / 100) / 12;
+            
+            let monthlyPayment, totalAmount, overPayment;
+            
+            if (paymentType === 'annuity') {
+                monthlyPayment = loanSum * (monthlyRate * Math.pow(1 + monthlyRate, loanTerm)) / (Math.pow(1 + monthlyRate, loanTerm) - 1);
+                totalAmount = monthlyPayment * loanTerm;
+            } else {
+                // Упрощенный расчет для дифференцированного платежа
+                const principalPayment = loanSum / loanTerm;
+                const firstPayment = principalPayment + (loanSum * monthlyRate);
+                const lastPayment = principalPayment + (principalPayment * monthlyRate);
+                monthlyPayment = (firstPayment + lastPayment) / 2;
+                totalAmount = monthlyPayment * loanTerm;
+            }
+            
+            overPayment = totalAmount - loanSum;
+            
+            document.getElementById('monthlyPaymentResult').textContent = Math.round(monthlyPayment).toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('overPaymentResult').textContent = Math.round(overPayment).toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('totalAmountResult').textContent = Math.round(totalAmount).toLocaleString('ru-RU') + ' ₽';
+            document.getElementById('effectiveRate').textContent = interestRate + '%';
+        }
+
+        // Auto-calculate on input change
+        document.querySelectorAll('#loanSum, #interestRate, #loanTerm, #paymentType').forEach(input => {
+            input.addEventListener('input', calculateCredit);
+            input.addEventListener('change', calculateCredit);
+        });
+
+        // Initialize calculation
+        calculateCredit();
+    </script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

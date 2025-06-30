@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОСАГО - ФинансЦентр</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%); }
+        .header-bg { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
+        .card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .service-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+    </style>
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#dc2626">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-bg text-white shadow-2xl">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <a href="index.html">ФинансЦентр</a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+					<a href="index.html" class="hover:text-red-300 transition">Главная</a>
+					<a href="about.html" class="hover:text-red-300 transition">О нас</a>
+					<a href="osago.html" class="hover:text-red-300 transition">ОСАГО</a>
+					<a href="kasko.html" class="hover:text-red-300 transition">КАСКО</a>
+					<a href="mortgage.html" class="hover:text-red-300 transition">Ипотека</a>
+					<a href="cards.html" class="hover:text-red-300 transition">Карты</a>
+					<a href="credits.html" class="hover:text-red-300 transition">Кредиты</a>
+					<a href="contacts.html" class="hover:text-red-300 transition">Контакты</a>
+                </div>
+                <button class="bg-white text-red-700 px-6 py-2 rounded-full font-semibold hover:bg-red-50 transition">
+                    Заявка онлайн
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-6">ОСАГО</h1>
+                <p class="text-xl mb-8">
+                    Обязательное страхование автогражданской ответственности с максимальными скидками и быстрым оформлением
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                        Рассчитать стоимость
+                    </button>
+                    <button class="border-2 border-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-red-700 transition">
+                        Оформить полис
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Калькулятор ОСАГО</h2>
+                <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Регион регистрации</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Выберите регион</option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Московская область</option>
+                                    <option>Киров</option>
+                                    <option>Другой регион</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Тип транспортного средства</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Легковой автомобиль</option>
+                                    <option>Мотоцикл</option>
+                                    <option>Грузовой автомобиль</option>
+                                    <option>Автобус</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Мощность двигателя (л.с.)</label>
+                                <input type="number" placeholder="150" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Возраст водителя</label>
+                                <input type="number" placeholder="30" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Стаж вождения (лет)</label>
+                                <input type="number" placeholder="10" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Количество водителей</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Ограниченное количество</option>
+                                    <option>Неограниченное количество</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Период использования</label>
+                                <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                    <option>Круглый год</option>
+                                    <option>До 6 месяцев</option>
+                                    <option>До 9 месяцев</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-red-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition mt-8">
+                                Рассчитать стоимость
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Преимущества ОСАГО в ФинансЦентр</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Быстрое оформление</h3>
+                    <p class="text-gray-600">Получите полис ОСАГО за 15 минут онлайн без посещения офиса</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Максимальные скидки</h3>
+                    <p class="text-gray-600">Экономьте до 50% благодаря КБМ и специальным предложениям</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Надежность</h3>
+                    <p class="text-gray-600">Работаем только с лицензированными страховыми компаниями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Наши партнеры</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <div class="text-2xl font-bold text-gray-700 mb-2">РЕСО</div>
+                    <p class="text-sm text-gray-500">от 3 500 ₽</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <div class="text-2xl font-bold text-gray-700 mb-2">Ингосстрах</div>
+                    <p class="text-sm text-gray-500">от 3 800 ₽</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <div class="text-2xl font-bold text-gray-700 mb-2">Альфа</div>
+                    <p class="text-sm text-gray-500">от 4 200 ₽</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <div class="text-2xl font-bold text-gray-700 mb-2">Тинькофф</div>
+                    <p class="text-sm text-gray-500">от 4 500 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Часто задаваемые вопросы</h2>
+                <div class="space-y-6">
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-800">Что такое ОСАГО?</h3>
+                        <p class="text-gray-600">ОСАГО - это обязательное страхование автогражданской ответственности владельцев транспортных средств. Полис покрывает ущерб, причиненный другим участникам дорожного движения.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-800">Сколько стоит ОСАГО?</h3>
+                        <p class="text-gray-600">Стоимость ОСАГО зависит от множества факторов: региона, мощности автомобиля, возраста и стажа водителя, КБМ. В среднем цена варьируется от 3 500 до 15 000 рублей.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-800">Можно ли оформить ОСАГО онлайн?</h3>
+                        <p class="text-gray-600">Да, электронный полис ОСАГО имеет такую же юридическую силу, как и бумажный. Вы можете оформить е-ОСАГО на нашем сайте за 15 минут.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-800">Что влияет на стоимость ОСАГО?</h3>
+                        <p class="text-gray-600">На стоимость влияют: коэффициент бонус-малус (КБМ), территориальный коэффициент, мощность двигателя, возраст и стаж водителя, период использования автомобиля.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Оформите ОСАГО прямо сейчас</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Получите полис за 15 минут с максимальной скидкой
+            </p>
+            <button class="bg-white text-red-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-red-50 transition">
+                Рассчитать и оформить
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ФинансЦентр</h3>
+                    <p class="text-gray-400">
+                        Ваш надежный партнер в мире автострахования
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="osago.html" class="hover:text-white transition">ОСАГО</a></li>
+                        <li><a href="kasko.html" class="hover:text-white transition">КАСКО</a></li>
+                        <li><a href="mortgage.html" class="hover:text-white transition">Ипотека</a></li>
+                        <li><a href="cards.html" class="hover:text-white transition">Карты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Компания</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-white transition">О нас</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Контакты</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📞 8 (800) 555-35-35</p>
+                        <p>📧 info@po4ta.ru</p>
+                        <p>📍 Киров, ул. Самая важная, 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 ФинансЦентр. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Calculator functionality
+        document.querySelector('.bg-red-600').addEventListener('click', function() {
+            // Simulate calculation
+            alert('Примерная стоимость ОСАГО: 4 250 ₽\nХотите оформить полис?');
+        });
+
+        // Form handlers
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Рассчитать') || button.textContent.includes('Оформить')) {
+                button.addEventListener('click', function() {
+                    const originalText = this.textContent;
+                    this.textContent = 'Загрузка...';
+                    this.disabled = true;
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.disabled = false;
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ваш-username.github.io/finanscenter-site/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin/
+Disallow: /private/
